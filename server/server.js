@@ -18,7 +18,7 @@ const server = http.createServer(app);    // Wrap Express in a raw HTTP server
 // This is because WebSockets upgrade from HTTP — so they need the same server
 const io = new Server(server, {
   cors: {
-    origin: ["https://queue-cure-peach.vercel.app", "http://localhost:5173"],,   // Allow any origin (fine for hackathon; restrict in production)
+    origin: ["https://queue-cure-peach.vercel.app", "http://localhost:5173"],   // Allow any origin (fine for hackathon; restrict in production)
     methods: ["GET", "POST"],
   },
 });
